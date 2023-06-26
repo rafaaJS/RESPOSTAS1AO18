@@ -1,0 +1,274 @@
+1 - =========================================================================
+var numero;
+numero=prompt("Digite o número:");
+numero=parseFloat(numero);
+
+  if(numero>20) {
+    numero=numero/2;
+   alert("O numero e:" +numero);
+  } else {
+   alert("O numero e menor que 20" +numero);
+  }
+
+2 - =========================================================================
+var senha;
+var patinhoFeio;
+senha=prompt("Digite a senha");
+
+    if(senha=="patinhoFeio") {
+       alert("Acesso permitido" +senha);
+    } else {
+       alert("Acesso negado" +senha);
+    }
+
+3 - =========================================================================
+var num1;
+var num2;
+var soma;
+num1=prompt("Digite o primeiro numero:");
+num2=prompt("Digite o segundo numero:");
+num1=parseFloat(num1);
+num2=parseFloat(num2);
+soma = num1+num2;
+
+   if(soma>10) {
+     alert("O numero está certo:" +soma);
+   } 
+
+4 - =========================================================================
+var num;
+num=prompt("Digite um numero:");
+
+  if(num>=20 && num<=90) {
+      alert("Esse numero esta certo");
+  } else {
+      alert("Esse numero esta errado");
+  }
+
+5 - =========================================================================
+var num1;
+var num2;
+num1=prompt("Digite o primeiro numero:");
+num2=prompt("Digite o segundo numero:");
+
+  if(num1>num2) {
+     alert("Este e o maior numero" +num1);
+  } else {
+    alert("Este e o maior numero" +num2);
+  }
+
+6 - =========================================================================
+var num1;
+var num2;
+num1=prompt("Digite o primeiro numero:");
+num2=prompt("Digite o segundo numero:");
+
+  if(num1>num2) {
+     alert("Este e o maior numero: " +num1);
+     alert("E este e o menor: " +num2);
+  } else if(num2>num1){
+    alert("Este e o maior numero" +num2);
+    alert("E este o menor: " +num1);
+  }
+
+7 - =========================================================================
+var num1;
+var num2;
+var num3;
+num1=prompt("Digite o primeiro numero:");
+num2=prompt("Digite o segundo numero:");
+num3=prompt("Digite o terceiro numero:");
+
+  if(num1<num2 && num1<num3) {
+       alert("Este e o menor numero" +num1);
+  } else if(num2<num1 && num2<num3) {
+       alert("Este e o menor numero" +num2);
+  } else {
+       alert("Este e o menor numero" +num3);
+  }
+
+8 - =========================================================================
+var num1;
+var num2;
+var num3;
+num1=prompt("Digite o primeiro número:");
+num2=prompt("Digite o segundo número:");
+num3=prompt("Digite o terceiro número:");
+
+  if(num1<num2 && num1<num3) {
+    if(num2<num3) {
+       alert("Os numeros em ordem crescentes são:" +num1 +num2 +num3);
+  } else {
+    alert("Os numeros em ordem crescentes são:" +num1 +num3 +num2);
+  } 
+  } else if(num2<num1 && num2<num3) {
+    if(num1<num3) {
+       alert("Os numeros em ordem crescentes são:" +num2 +num1 +num3);
+  } else {
+    alert("Os numeros em ordem crescentes são:" +num2 +num3 +num1);
+  } 
+  } else {
+    if(num1<num2) {
+        alert("Os numeros em ordem crescentes são:" +num3 +num1 +num2);
+    } else {
+        alert("Os numeros em ordem crescentes são:" +num3 +num2 +num1);
+    }
+  }
+
+9 - =========================================================================
+var num1;
+var num2;
+var num3;
+var num4;
+num1=prompt("Digite o primeiro número em ordem crescente:");
+num2=prompt("Digite o segundo número em ordem crescente:");
+num3=prompt("Digite o terceiro número em ordem crescente:");
+num4=prompt("Digite o quarto número:");
+
+  if (num4>num3) {
+    alert("Os números em ordem decrescente são: " +num4 +num3 +num2 +num1);
+  } else if (num4>num2) {
+    alert("Os números em ordem decrescente são: " +num3 +num4 +num2 +num1);
+  } else if (num4>num1) {
+    alert("Os números em ordem decrescente são: " +num3 +num2 +num4 +num1);
+  } else {
+    alert("Os números em ordem decrescente são: " +num3 +num2 +num1 +num4);
+  }
+
+10 - =========================================================================
+var nome1;
+var peso1;
+nome1=prompt("Digite o nome da primeira pessoa:");
+peso1=prompt("Digite o peso da primeira pessoa:");
+peso1=parseFloat(peso1);
+var nome2;
+var peso2;
+nome2=prompt("Digite o nome da segunda pessoa:");
+peso2=prompt("Digite o peso da segunda pessoa:");
+peso2=parseFloat(peso2);
+
+  if (peso1>peso2) {
+    alert("A pessoa mais gorda é:" +nome1);
+  } else {
+    alert("A pessoa mais gorda é:" +nome2);
+  } 
+
+11 - =========================================================================
+var num;
+num=prompt("Digite um número:");
+num=parseFloat(num);
+
+  if(num%2===0) {
+    alert("O número e par:" +num);
+} else {
+    alert("O número e impar:" +num);
+}
+
+12 - =========================================================================
+var num;
+num=prompt("Digite um número:");
+num=parseFloat(num);
+
+  if(num%3===0) {
+    alert("O número e multiplo de 3: " +num);
+} else {
+    alert("O número nao e multiplo de 3: " +num);
+}
+
+13 - =========================================================================
+var nota;
+    for(;;) {
+     nota=prompt("Digite uma nota entre 0 e 10: ");
+
+       if(nota>=0 && nota<=10) {
+          alert("Nota certa!");
+          break;
+       } else {
+          alert("Invalido, digite novamente");
+       }
+    }
+
+14 - =========================================================================
+var usuario;
+var senha;
+   for(;;) {
+    usuario=prompt("Digite seu nome de usuario");
+    senha=prompt("Digite sua senha");
+
+    if(senha===usuario) {
+        alert("Erro: A senha nao pode ser igual ao usuario. Tente novamente");
+    } else {
+        alert("Correto");
+        break;
+    }
+  }
+
+15 - =========================================================================
+var nome;
+ nome=prompt("Digite seu nome:");
+var idade;
+ idade=prompt("Digite sua idade:");
+var salario;
+ salario=prompt("Digite seu salário:");
+var sexo;
+ sexo=prompt("Digite seu sexo:");
+var estadoCivil;
+ estadoCivil=prompt("Digite seu estado civil:");
+
+  if(nome.length<=3) {
+    alert("Erro: O nome deve ter mais de 3 caracteres. Tente novamente.");
+  } else if(idade<0 && idade>150) {
+    alert("Erro: A idade deve estar entre 0 e 150. Tente novamente.");
+  } else if(salario<=0) {
+    alert("Erro: O salario deve ser maior que zero. Tente novamente.");
+  } else if(sexo=='f' && sexo=='m') {
+    alert("Erro: O sexo deve ser f ou m. Tente novamente.");
+  } else if(estadoCivil=='s' && estadoCivil=='c' && estadoCivil=='v' && estadoCivil=='d') {
+    alert("Erro: O estado civil deve ser s, c, v ou d. Tente novamente.");
+  } else {
+    alert("Informações validas:\nNome: " +nome+ "\nIdade: " +idade+ "\nSalário: " +salario+ "\nSexo: " +sexo+ "\nEstado Civil: " +estadoCivil);
+ }
+
+16 - =========================================================================
+var numerosAbaixo="";
+  for (var i=1;i<=20;i++) {
+  numerosAbaixo+=i+ "\n";
+  }
+   alert("Numeros um abaixo do outro:\n" + numerosAbaixo);
+
+var numerosAoLado="";
+  for (var i=1;i<=20;i++) {
+   numerosAoLado+=i+ " ";
+  }
+   alert("Numeros um ao lado do outro:\n" + numerosAoLado);
+
+17 - =========================================================================
+var numerosImpar="Números impares entre 1 e 50:\n";
+  for (var i=1;i<=50;i++) {
+   if (i%2!==0) {
+    numerosImpar+=i+ "\n";
+   }
+  }
+    alert(numerosImpar);
+
+
+18 - =========================================================================
+var num1;
+var num2;
+num1=parseInt(prompt("Digite o primeiro número inteiro:"));
+num2=parseInt(prompt("Digite o segundo número inteiro:"));
+
+var numerosIntervalo="Numeros no intervalo entre " +num1+ " e " +num2+ ":\n";
+  if (num1<num2) {
+   for (var i=num1+1;i<num2;i++) {
+    numerosIntervalo+=i+"\n";
+   }
+  } else if (num1>num2) {
+  for (var i=num1-1;i>num2;i--) {
+    numerosIntervalo+=i+"\n";
+  }
+  } else {
+  numerosIntervalo="Não tem numeros no intervalo, pois os numeros são iguais.";
+  }
+  alert(numerosIntervalo);
+===============================================================================
